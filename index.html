@@ -14,8 +14,14 @@
 
   <div class="dimensions-selector">
     Dimensions:
-    <input type="radio" name="num-dimensions" onChange="toggleDimensions(1)" />
+    <!-- <input type="radio" name="num-dimensions" onChange="toggleDimensions(1)" />
     1D
+    <input
+      type="radio"
+      name="num-dimensions"
+      onChange="toggleDimensions(2)"
+      checked
+    /> -->
     <input
       type="radio"
       name="num-dimensions"
@@ -27,6 +33,7 @@
     3D
   </div>
   <div class="graph-data">
+    <br />
     <span id="graph-data-description"></span>
     <button class="toggle-data-btn" onClick="toggleData()">
       Show me something else
