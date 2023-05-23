@@ -14,7 +14,12 @@ let toggleData;
   document.getElementById('graph-data-description').innerHTML =
     dataSet.description ? `Viewing ${dataSet.description}` : '';
 
-  dataSet(Graph.resetProps().enableNodeDrag(true).numDimensions(numDim));
+  dataSet(
+    Graph.resetProps()
+      .enableNodeDrag(true)
+      .numDimensions(numDim)
+      .onBackgroundRightClick(alert('hello'))
+  );
 })(); // IIFE init
 
 const toggleDimensions = function (numDimensions) {
